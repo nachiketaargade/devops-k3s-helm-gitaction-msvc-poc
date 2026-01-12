@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Blog</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1>My Blog</h1>
+  {% for post in posts %}
+    <article>
+      <h2>{{ post[0] }}</h2>
+      <p>{{ post[1] }}</p>
+    </article>
+  {% endfor %}
+</body>
+</html>
