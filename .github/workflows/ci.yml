@@ -21,4 +21,4 @@ jobs:
       - uses: docker/build-push-action@v5
         with:
           push: true
-          tags: ghcr.io/nachiketaargade/blog-poc:latest
+          tags: ghcr.io/nachiketaargade/devops-k3s-helm-gitaction-msvc-poc:latest

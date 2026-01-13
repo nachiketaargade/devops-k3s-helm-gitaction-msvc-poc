@@ -15,5 +15,6 @@ spec:
       containers:
       - name: blog
         image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        imagePullPolicy: Always
         ports:
-        - containerPort: 8080
+        - containerPort: 8081
