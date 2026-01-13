@@ -7,6 +7,11 @@ kubectl apply -f argocd/application.yaml
 
 kubectl rollout restart deployment blog -n blog
 
+kubectl port-forward svc/blog -n blog 8081:80
+kubectl port-forward svc/blog -n blog 8082:80
+kubectl port-forward svc/argocd-server -n argocd 8090:443
+
+
 GitHub Repo
  ├─ app/                 # Python/Go microservice
  │   ├─ Dockerfile
